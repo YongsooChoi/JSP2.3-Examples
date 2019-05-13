@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+			http://xmlns.jcp.org/xml/ns/javaee/web-app_3.1.xsd"
+	version="3.1">
+
+	<jsp-config>
+		<taglib>
+			<taglib-uri> <!-- JSP에서 해당 태그 라이브러리를 참조할 때 사용하는 식별자 -->
+				/WEB-INF/tlds/el-functions.tld 
+			</taglib-uri> 
+			<taglib-location> <!-- 태그 라이브러리를 기술한 TLD 파일의 위치를 명시 -->
+				/WEB-INF/tlds/el-functions.tld
+			</taglib-location>
+		</taglib>
+	</jsp-config>
+
+</web-app>
