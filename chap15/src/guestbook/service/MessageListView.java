@@ -21,7 +21,7 @@ public class MessageListView {
 		this.messageTotalCount = messageTotalCount;			// 메시지  전체 갯수
 		this.currentPageNumber = currentPageNumber;			// 요청 페이지 번호
 		this.messageCountPerPage = messageCountPerPage;		// 페이지 당 메시지 출력 갯수
-		this.firstRow = firstRow;							// 전체 메시지 중 현재 메시지 목록의 시작 행
+		this.firstRow = startRow;							// 전체 메시지 중 현재 메시지 목록의 시작 행
 		this.endRow = endRow;								// 전체 메시지 중 현재 메시지 목록의 끝 행
 		
 		calculatePageTotalCount();

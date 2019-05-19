@@ -14,12 +14,14 @@ public class GetMessageListService {
 	
 	// 싱글톤 패턴을 적용한다.
 	private static GetMessageListService instance = new GetMessageListService();
-		public static GetMessageListService getInstance() {
+	
+	public static GetMessageListService getInstance() {
 		return instance;
 	}
-		private GetMessageListService() {
-	}
 	
+	private GetMessageListService() {
+	}
+
 	// 한 페이지에서 보여줄 메시지 객수를 3개로 지정한다.
 	private static final int MESSAGE_COUNT_PER_PAGE = 3;
 	

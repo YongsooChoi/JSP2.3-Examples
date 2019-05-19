@@ -18,7 +18,7 @@ public class WriteMessageService {
 	private WriteMessageService() {
 	}
 	
-	public void write(Message message) {	// message 파라미터에 담긴 값 유효성 검사 코드 추가 필요
+	public void write(Message message) {	// message 파라미터에 담긴 값 유효성 검사 코드 추가 필요 (null값 여부)
 		Connection conn = null;
 		try {
 			conn = ConnectionProvider.getConnection();

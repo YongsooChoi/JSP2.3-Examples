@@ -5,10 +5,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import org.apache.tomcat.jdbc.pool.JdbcInterceptor;
 
 import guestbook.model.Message;
 import jdbc.JdbcUtil;
@@ -17,6 +16,7 @@ public class MessageDao {
 	
 	// 한 개의 객체만 사용하도록 싱글톤 패턴을 적용
 	private static MessageDao messageDao = new MessageDao();	// 유일한 객체를 정적 필드에 저장
+	
 	public static MessageDao getInstance() {					// 유일한 객체에 접근할 수 있는 정적 메서드 정의
 		return messageDao;
 	}
@@ -115,8 +115,7 @@ public class MessageDao {
 			pstmt.setInt(1, messageId);
 			return pstmt.executeUpdate();
 		} finally {
-			JdbcUtil.close
-			(pstmt);
+			JdbcUtil.close(pstmt);
 		}
 	}
 }

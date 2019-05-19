@@ -1,6 +1,7 @@
 package guestbook.model;
 
 public class Message {
+	
 	private int id;
 	private String guestName;
 	private String password;
