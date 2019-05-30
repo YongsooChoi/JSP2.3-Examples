@@ -40,4 +40,9 @@ public class Member {
 	public boolean matchPassword(String pwd) {	
 		return password.equals(pwd);
 	}
+	
+	// 암호 변경 기능
+	public void changePassword(String newPwd) {
+		this.password = newPwd;
+	}
 }
